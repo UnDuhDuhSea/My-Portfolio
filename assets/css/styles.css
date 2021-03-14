@@ -85,7 +85,26 @@ nav a {
     border-bottom: 2px solid black;
     font-size: 17px;
 }
-  
+@media screen and (min-width: 400px) {
+    /* Use flex-direction to stack the navbar, sidebar, and body */
+    .box1, .box2, .box3 {
+        flex-direction: row;
+    }
+    /* Make the sidebar stack below the body */
+    aside {
+      order: 0;
+      border-right: solid;
+      text-align: right;
+    }
+    /* Change the header background */
+    header {
+      background: #772014;
+    }
+    section {
+        width: 100%;
+    }
+  }  
+
   @media screen and (min-width: 800px) {
     /* Use flex-direction to stack the navbar, sidebar, and body */
     .box1, .box2, .box3 {
@@ -94,6 +113,8 @@ nav a {
     /* Make the sidebar stack below the body */
     aside {
       order: 0;
+      border-right: solid;
+      text-align: right;
     }
     /* Change the header background */
     header {
