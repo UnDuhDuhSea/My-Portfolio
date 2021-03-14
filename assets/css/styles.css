@@ -41,14 +41,22 @@ nav a {
     align-items: flex-end;
 }
 
-main {
-    padding: 20px;
+.box1 {
     display: flex;
-    flex-wrap: wrap;
-  }
+    flex-direction: column;
+}
+
+.box2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.box3 {
+    display: flex;
+    flex-direction: column;
+}
 
 /* these are being added from other website for testing */
-
   
   aside {
     flex: 1;
@@ -59,25 +67,29 @@ main {
   section {
     flex: 3;
     background-color: #fff;
-    padding: 20px;
+    padding: 10px;
   }
   
-  .sample-img {
-    background-color: #fff;
-    width: 100%;
-    padding: 20px;
-    height: 200px;
-    border: 1px solid black;
+  ul {
+    padding: 20px 7%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
   }
+
+  footer a {
+    color: #13293d;
+    text-decoration: none;
+    border-bottom: 2px solid black;
+    font-size: 17px;
+}
   
-  footer {
-    padding: 20px;
-  }
-  
-  @media screen and (max-width: 768px) {
+  @media screen and (min-width: 800px) {
     /* Use flex-direction to stack the navbar, sidebar, and body */
-    main, footer {
-      flex-direction: column;
+    .box1, .box2, .box3 {
+        flex-direction: row;
     }
     /* Make the sidebar stack below the body */
     aside {
@@ -86,5 +98,8 @@ main {
     /* Change the header background */
     header {
       background: #772014;
+    }
+    section {
+        width: 100%;
     }
   }  
