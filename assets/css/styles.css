@@ -3,7 +3,7 @@
 }
 
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
 }
 
@@ -19,7 +19,7 @@ header {
 
 nav {
     background-color: #d8a47f;
-    padding: 10px 7%;
+    padding: 10px;
     list-style-type: none;
     display: flex;
     justify-content: space-around;
@@ -31,6 +31,21 @@ nav a {
     text-decoration: none;
     border-bottom: 2px solid black;
     font-size: 17px;
+    padding: 0px 2px;
+}
+
+h1 {
+    font-weight: bolder;
+}
+
+h2 {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: larger;
+    font-weight: bold;
 }
 
 .my-portfolio-title {
@@ -40,6 +55,8 @@ nav a {
     justify-content: center;
     align-items: flex-end;
 }
+
+
 
 .box1 {
     display: flex;
@@ -61,7 +78,7 @@ nav a {
   aside {
     flex: 1;
     background-color: #b9c6ae;
-    padding: 20px 0px;
+    padding: 10px 0px;
     border-bottom: solid;
     border-bottom-width: thick;
   }
@@ -72,8 +89,26 @@ nav a {
     padding: 15px;
   }
 
+  section p{
+    line-height: 20px;
+  }
+
   .main-info {
-    padding: 0px;
+    padding: 10px 0px 0px 0px;
+  }
+
+  .project-cards {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+    height: 100%;
+    padding: 20px
   }
   
   ul {
@@ -83,6 +118,10 @@ nav a {
     flex-direction: column;
     justify-content: space-around;
     flex-wrap: wrap;
+  }
+
+  ul li {
+      padding: 5px
   }
 
   footer a {
@@ -104,6 +143,13 @@ nav a {
     section {
         width: 100%;
     }
+    ul {
+        flex-direction: row;
+    }
+    .my-portfolio-title {
+        justify-content: flex-end;
+        padding-right: 20px;
+    }
   }  
 
   @media screen and (min-width: 800px) {
@@ -116,7 +162,7 @@ nav a {
       order: 0;
       padding-right: 10px;
       border-right: solid;
-      border-right-width: thick;
+      border-right-width: medim;
       border-bottom-style: none;
       text-align: right;
     }
@@ -125,6 +171,14 @@ nav a {
       background: #772014;
     }
     .main-info {
-        padding-left: 20px;
+        padding: 0px 0px 0px 20px;
+    }
+    ul {
+        flex-direction: row;
+    }
+    .my-portfolio-title {
+        justify-content: flex-end;
+        padding-right: 50px;
+        padding-bottom: 30px;
     }
   }  
