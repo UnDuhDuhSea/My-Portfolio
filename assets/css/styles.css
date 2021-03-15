@@ -105,11 +105,11 @@ h3 {
     align-items: center;
   }
 
-  .card {
-    width: 100%;
+  /* .card {
+    width: %;
     height: 100%;
     padding: 20px
-  }
+  } */
   
   ul {
     padding: 20px 7%;
