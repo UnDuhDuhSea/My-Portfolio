@@ -131,6 +131,40 @@ h3 {
     font-size: 17px;
 }
 
+/* this is the CSS for the flexbox in section 3 */
+/* .content {
+  flex-grow: 1;
+} */
+
+.content-row {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.col-1 {
+  width: 100%;
+  height: 200px;
+}
+
+.col-2 {
+  width: 100%;
+  height: 200px;
+}
+
+/* box class is just a dev. tool */
+.box {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+}
+
+.content {
+  flex: 3;
+}
+
+
+
 @media screen and (min-width: 425px) {
     /* Make the sidebar stack below the body */
     aside {
@@ -149,6 +183,17 @@ h3 {
     .my-portfolio-title {
         justify-content: flex-end;
         padding-right: 20px;
+    }
+    .col-1 {
+      width: 100%;
+      height: 300px;
+    }
+    .col-2 {
+      width: 50%;
+      height: 200px;
+    }
+    .content-row {
+      flex-direction: row;
     }
   }  
 
@@ -180,5 +225,16 @@ h3 {
         justify-content: flex-end;
         padding-right: 50px;
         padding-bottom: 30px;
+    }
+    .col-1 {
+      width: 100%;
+      height: 300px;
+    }
+    .col-2 {
+      width: 50%;
+      height: 200px;
+    }
+    .content-row {
+      flex-direction: row;
     }
   }  
