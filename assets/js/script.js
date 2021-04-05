@@ -11,22 +11,22 @@ var prj3Git = document.getElementById('prj-3-git');
 
 
 prj1.addEventListener('click', function () {
-    location.href = 'https://d606n6k.github.io/recipe-shuffle/';
+    location.href = 'https://github.com/UnDuhDuhSea/My-Portfolio';
 })
 // prj1Git.addEventListener('click', function () {
-//     location.href = 'https://github.com/UnDuhDuhSea/My-Portfolio';
+//     location.href = 'https://d606n6k.github.io/recipe-shuffle/';
 // })
 
 prj2.addEventListener('click', function () {
-    location.href = 'https://unduhduhsea.github.io/Weather-Dashboard/';
+    location.href = ' https://github.com/UnDuhDuhSea/Weather-Dashboard';
 })
 // prj2Git.addEventListener('click', function () {
-//     location.href = 'https://github.com/UnDuhDuhSea/Weather-Dashboard';
+//     location.href = 'https://unduhduhsea.github.io/Weather-Dashboard/';
 // })
 
 prj3.addEventListener('click', function () {
-    location.href = 'https://unduhduhsea.github.io/Work-Day-Scheduler/';
+    location.href = 'https://github.com/UnDuhDuhSea/Work-Day-Scheduler';
 })
 // prj3Git.addEventListener('click', function () {
-//     location.href = 'https://github.com/UnDuhDuhSea/Work-Day-Scheduler';
+//     location.href = 'https://unduhduhsea.github.io/Work-Day-Scheduler/';
 // })
